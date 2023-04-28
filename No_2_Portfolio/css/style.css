@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    background-color: dark;
+    width: 20rem;
+    height: 100vh;
+    margin: 50px;
+    padding: 20px;
+
+}
+.sidebar nav li {
+    padding: 80px;
+    list-style: none;
+    font-size: x-large;
+    font-family: cursive;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 50%;
+    display: inline-flex;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    padding: 1em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 10px;
+    animation: bouncing 1s ease 0s infinite alternate both;
+}
+.sidebar nav li:hover {
+    filter: hue-rotate(10px);
+    animation: 1s infinite pulse;
+}
+.aboutMe {
+    list-style: none;
+}
+.Photo {
+    float: right;
+}
+.glow {
+    color: rgb(237, 237, 151);
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 31px #fff,
+    0 0 55px rgb(255, 226, 4)
+    0 0 91px rgb(255, 226, 4)
+    0 0 100px rgb(255, 226, 4)
+    0 0 122px rgb(255, 226, 4)
+    0 0 140px rgb(255, 226, 4),
+}
+.main {
+    background-color: yellow;
+    width: 90vw;
+    display: grid; 
+    height: 200px;
+}
+.container {
+    display: flex;
+}
+.infoContainer {
+    background-color: pink;
+    height: 45vw;
+    width: 80vw;
+}
+/* Animation 1 */
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+        box-shadow: 0 0 10px green;
+    }
+    50%{
+        bottom: 20px;
+        box-shadow: 0 25px 25px navy;
+    }
+    100% {
+        bottom: 40px;
+        box-shadow: 0 50px 50px purple;
+    }
+}
+/* Animation 2 */
+@keyframes pulse {
+    0% {
+        border-radius: 50px;
+        filter: hue-rotate(10px);
+        color: greenyellow;
+        border-color: silver;
+    }
+    50% {
+        border-radius: 60px;
+        filter: blur(1px);
+        color: navy;
+        border-color:darkgray;
+    }
+    100% {
+        border-radius: 50px;
+        filter: hue-rotate(2px);
+        color: purple;
+        border-color: gray;
+    }
+}
+/* Animation 3 */
+@keyframes white_pulse {
+    0% {
+        border-radius: 50px;
+        filter: hue-rotate(10px);
+        color: darkgray;
+        border-color: silver;
+    }
+    50% {
+        border-radius: 60px;
+        filter: blur(1px);
+        color: silver;
+        border-color:darkgray;
+    }
+    100% {
+        border-radius: 50px;
+        filter: hue-rotate(2px);
+        color: whitesmoke;
+        border-color: gray;
+    }
+}
