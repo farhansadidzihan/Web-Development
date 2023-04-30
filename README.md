@@ -1,1 +1,1 @@
-# HTML, CSS, JavaScript, MERN (MongoDB, Express.js, React.js, Node.js) Stack, Django
+# HTML, CSS, JavaScript, MERN (MongoDB, Express.js, React.j, Node.js) Stack, Django
