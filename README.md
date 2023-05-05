@@ -1,1 +1,1 @@
-# HTML, CSS, JavaScript, React, Django, MongoDB
+# HTML, CSS, JavaScript, React, Django, MongoDB or MySQL
