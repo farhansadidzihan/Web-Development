@@ -5,7 +5,7 @@
 npm install
 
 # Launch app in Browser
-npm start
+npm run dev
 ```
 
 ---
