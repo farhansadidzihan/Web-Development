@@ -2,7 +2,7 @@
 
 ```s
 # Run in the Terminal
-git clone https://github.com/jayantasamaddar/little-lemon-meta-frontend-capstone.git folder
+git clone https://github.com/FarhanZihan/Web-Development/tree/main/No_3_Projects/Facebook%20Login%20Clone.git folder
 
 # Install Dependencies
 npm install
