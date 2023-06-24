@@ -1,3 +1,3 @@
 # HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, React, Django, Django Rest Framework(DRF), MySQL/MongoDB
 For Using Images Unsplash API :- https://source.unsplash.com/{size}/?{about}
-firebase initialization :- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Firebase initialization :- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
