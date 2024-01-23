@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Learning website">
+    <meta name="keywords" content="mern-stack, web-dev, full-stack">
+    <title>Learning MERN</title>
+    <link rel="shortcut icon" href="Rounded-Profile-Picture.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- This is a Html Comment -->
+    <main>
+      <!-- Internal CSS -->
+      <style>
+        /* Element Selector */
+        * {
+          margin : 0;
+          padding: 0;
+        }
+        h1, h2 {
+          color: green !important;
+        }
+        /* Id Selector */
+        #paragraph {
+          color: magenta;
+        }
+        /* Class Selector */
+        h1.main-heading {
+          background-color: antiquewhite;
+        }
+      </style>
+      <!-- Inline CSS -->
+      <h1 style="text-align: center; color: blue" class="main-heading">I'm Zihan</h1>
+      <img src="https://source.unsplash.com/500x500/?tech" alt="..." />
+      <img src="https://source.unsplash.com/500x500/?code" alt="..." />
+      <img src="https://source.unsplash.com/500x500/?php" alt="..." />
+      <ul>
+        <li class="Noodles">Maggi</li>
+        <li>Dim</li>
+        <li>Egg</li>
+      </ul>
+      <ol style="padding-left: 200px">
+        <li>3</li>
+        <li>343</li>
+        <li>dfs</li>
+      </ol>
+  
+      <table>
+        <tr>
+          <td>name</td>
+          <td>age</td>
+          <td>passion</td>
+        </tr>
+        <tr>
+          <td>a</td>
+          <td>2</td>
+          <td>z</td>
+        </tr>
+        <tr>
+          <td>coding</td>
+          <td>designing</td>
+          <td>football</td>
+        </tr>
+      </table>
+  
+      <table>
+        <tr>
+          <td>Wow</td>
+          <td>Amazing</td>
+          <td>Whey</td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>5</td>
+          <td>52</td>
+        </tr>
+        <tr>
+          <td>43</td>
+          <td>46</td>
+          <td>37</td>
+        </tr>
+      </table>
+      H <sub>2</sub> O
+      <p id="paragraph">
+        2 <sub>2 </sub><i> Lorem </i> <b> ipsum </b> dolor
+        <strong> str </strong> amet, <em> consectetur </em> adipisicing elit.
+        Eveniet nesciunt quidem laboriosam unde perferendis? Enim amet, doloribus
+        neque quo nam dolore animi illo accusamus id. Similique qui maxime dolores
+        nam.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+        Sequi totam commodi mollitia labore dolore eum doloribus architecto
+        maiores asperiores quos?
+      </p>
+      <pre>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, soluta accusantium tempora, dolorem quis non nemo eaque amet vero maxime, laborum illo quae fuga minima nobis?  
+              Blanditiis tempore saepe vero?
+          </pre
+      >
+      <pre>
+              class Professor extends Person {
+                  teaches;
+                
+                  constructor(name, teaches) {
+                    super(name);
+                    this.teaches = teaches;
+                  }
+                
+                  introduceSelf() {
+                    console.log(
+                      `My name is ${this.name}, and I will be your ${this.teaches} professor.`
+                    );
+                  }
+                
+                  grade(paper) {
+                    const grade = Math.floor(Math.random() * (5 - 1) + 1);
+                    console.log(grade);
+                  }
+                }
+                
+          </pre
+      >
+      <h1> Testing css</h1>
+      <p>
+        The function <code>selectAll()</code> highlights all the text in the input
+        field so the user can, for example, copy or delete the text.
+      </p>
+      <p>
+        The <code>push()</code> method adds one or more elements to the end of an
+        array and returns the new length of the array.
+      </p>
+      <article>dfsdfa</article>
+      <p class="container"> THis is a container </p>
+      <p><a href="">dfsdf</a></p> -->
+      <div style="background-color: maroon; display: inline;" class="container"> This is Block Element (div) </div>
+      <span style="background-color: maroon; display: inline;"> This is Inline Element</span>
+  
+      <div id="myid">id</div>
+  
+      <nav>
+        <ul>
+          <li style="list-style-type: none; display: inline;"><a href="#">Zihan</a></li>
+          <li style="list-style-type: none; display: inline;"><a href="#">Zihan</a></li>
+          <li style="list-style-type: none; display: inline;"><a href="#">Zihan</a></li>
+          <li style="list-style-type: none; display: inline;"><a href="#">Zihan</a></li>
+          <li style="list-style-type: none; display: inline;"><a href="#">Zihan</a></li>
+        </ul>
+      </nav>
+  
+      <table border="1">
+        <thead>
+          <tr>
+            <td> Name </td>
+            <td> id </td>
+            <td> age </td>
+            <td> hobby </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Zihan </td>
+            <td> 01 </td>
+            <td> 15 </td>
+            <td rowspan="3"> coding </td>
+          </tr>
+          <tr>
+            <td> Zihan </td>
+            <td> 01 </td>
+            <td> 15 </td>
+            <td> coding </td>
+          </tr>
+          <tr>
+            <td> Zihan </td>
+            <td> 01 </td>
+            <td> 15 </td>
+            <td> coding </td>
+          </tr>
+        </tbody> 
+      </table>
+  
+      <table border="2" style="display: inline;">
+        <tr>
+          <td>Column 1</td>
+          <td>Column 2</td>
+          <td>Column 3</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Row 1 Cell 1</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 3</td>
+        </tr>
+        <tr>
+          <td colspan="3"> Row3 Cell 1</td>
+        </tr>
+      </table>
+  
+      <table border="3" style="display: inline;">
+        <thead>
+          <tr>
+            <td>No.</td>
+            <td>Full Name</td>
+            <td>Position</td>
+            <td>Salary</td>
+            <td>Type</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+            <td rowspan="4">Company Founder</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Mark Zackerburg</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+            <td>$4600</td>
+          </tr>
+        </tfoot>
+      </table>
+  
+      <table border="5">
+        <thead>
+          <tr> 
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="8">1</td>
+            <td rowspan="4">Kerala</td>
+            <td rowspan="2">Cochin</td>
+            <td>New Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Main Street</td>
+            <td>300</td>
+            <td>288</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Trivandra</td>
+            <td>Guru Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>TVK Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td rowspan="4">Maharastra</td>
+            <td rowspan="2">Mumbai</td>
+            <td>Krisha Street</td>
+            <td>700</td>
+            <td>850</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Main Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Surath</td>
+            <td>New Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Billa Street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td rowspan="8">2</td>
+            <td rowspan="4">Alaska</td>
+            <td rowspan="2">AKA Central</td>
+            <td>New Street</td>
+            <td>200</td>
+            <td>210</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Cross Street</td>
+            <td>1000</td>
+            <td>1050</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <table border="10">
+        <thead>
+          <tr>
+            <td rowspan="3">Day</td>
+            <td colspan="3">Seminar</td>
+          </tr>
+          <tr>
+            <td colspan="2">Schedule</td>
+            <td colspan="3" rowspan="2">Topic</td>
+          </tr>
+          <tr>
+            <td>Begin</td>
+            <td>End</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00am</td>
+            <td rowspan="2">5:00pm</td>
+            <td>Introduction to XML</td>
+          </tr>
+          <tr>
+            <td>Validity DTD and Relax NG</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00am</td>
+            <td>11:00am</td>
+            <td rowspan="1.5">XPath</td>
+          </tr>
+          <tr>
+            <td>11:00am</td>
+            <td>2:00pm</td>
+            <td rowspan="1.5">XSL Transfromation</td>
+          </tr>
+          <tr>
+            <td>2:00pm</td>
+            <td>5:00pm</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00am</td>
+            <td>12:00am</td>
+            <td>XSL Formatting Objects</td>
+          </tr>
+        </thead>
+      </table>
+  
+      <form action="">
+        <label for="email">Email id : </label>
+        <input type="text" id="email">
+        <br>
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" placeholder="Not 12345" id="password">
+        <br>
+        <br>
+        <input type="button" name="option" value="Click Here">
+        <input type="radio" name="option" value="Click Here">
+        <input type="radio" value="Click Here" name="option">
+        <input type="radio"  name="option" value="Click Here">
+        <input type="radio" name="option" value="Click Here">
+        <input type="submit" name="option" value="Click Here">
+        <br>
+        <br>
+        <input type="file">
+      </form>
+  
+      <form>
+        <label for="datepicker">Birthday</label>
+        <input type="date" id="datepicker">
+        <br>
+        <label for="select1">Choose Your Dish</label>
+        <select name="dishes" id="select1" multiple>
+          <option value="none">Choose</option>
+          <option value="Maggi">Maggi</option>
+          <option value="Kurkure">Kurkure</option>
+          <option value="Chips">Chips</option>
+        </select>
+  
+        <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Discribe"></textarea>
+  
+        <fieldset>
+          <legend>Html Form</legend>
+          <form>
+            <label for="datepicker">Birthday</label>
+            <input type="date" id="datepicker">
+            <br>
+            <label for="select1">Choose Your Dish</label>
+            <select name="dishes" id="select1">
+              <option value="none">Choose</option>
+              <option value="Maggi">Maggi</option>
+              <option value="Kurkure">Kurkure</option>
+              <option value="Chips">Chips</option>
+            </select>
+      
+            <textarea name="textarea1" id="textarea1" cols="30" rows="10" placeholder="Discribe"></textarea>
+      
+            <fieldset>
+              <legend>Html Form</legend>
+            </fieldset>
+      
+          </form>
+        </fieldset>
+  
+      </form>
+  
+      <form>
+        <h1> Event Registration </h1>
+        <label for="name"> Name: </label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label for="email"> Email: </label>
+        <br>
+        <input type="email" id="email">
+        <br>
+        <label for="telephone"> Phone No. </label>
+        <br>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="telephone">
+        <br>
+        <label for="occupation"> Occupation </label>
+        <br>
+        <select name="select" id="occupation">
+          <option value="other">Other</option>
+          <option value="Programmer">Programmer</option>
+          <option value="ml-engineer">ML Engineer</option>
+          <option value="web-devloper">Web Developer</option>
+        </select>
+        <br>
+        <fieldset>
+          <legend>  Topics of Interest </legend>
+          <br>
+          <input type="checkbox" name="html" id="html">
+          <label for="html"> Html </label>
+          <input type="checkbox" name="css" id="css">
+          <label for="css"> CSS </label>
+          <input type="checkbox" name="js" id="js">
+          <label for="js"> JavaScript </label>
+        </fieldset>
+        <label for="comment"> Comments: </label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button type="submit"> Register </button>
+      </form>
+      
+      <form>
+        <h1> Job Application </h1>
+        <label for="name"> Name: </label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        <label for="email"> Email: </label>
+        <br>
+        <input type="email" id="email">
+        <br>
+        <label for="telephone"> Phone: </label>
+        <br>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="telephone">
+        <br>
+        <label for="resume"> Resume: </label>
+        <br>
+        <input type="file" name="resume" id="resume">
+        <br>
+        <label for="experience"> Experience (years): </label>
+        <br>
+        <input type="number" id="experience">
+        <fieldset>
+          <legend>  Skills: </legend>
+          <br>
+          <input type="checkbox" name="html" id="html">
+          <label for="html"> Html </label>
+          <input type="checkbox" name="css" id="css">
+          <label for="css"> CSS </label>
+          <input type="checkbox" name="js" id="js">
+          <label for="js"> JavaScript </label>
+        </fieldset>
+        <label for="select"> Highest Education: </label>
+        <br>
+        <select name="select" id="occupation">
+          <option value="High School">High School </option>
+          <option value="College">College</option>
+          <option value="University">University</option>
+          <option value="msc">MSC</option>
+        </select>
+        <br>
+        <label for="availablity"> Availablity: </label>
+        <br>
+        <input type="radio" id="full-time">
+        <br>
+        <label for="full-time"> Full-Time </label>
+        <br>
+        <input type="radio" id="part-time">
+        <br>
+        <label for="part-time"> Part-Time </label>
+        <br>
+        <label for="comment"> Additional Comments: </label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <button type="submit"> Submit Application </button>
+      </form>
+  
+      <form> 
+        <h2> Complex Form </h2>
+  
+        <fieldset>
+          <legend> Personal Information </legend>
+          <label for="name"> Name </label>
+          <input type="text" name="name" id="name">
+  
+          <label for="email"> Email </label>
+          <input type="email" name="email" id="email">
+  
+          <label for="phone"> Phone </label>
+          <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone">
+          
+          <label for="Birthday"> Date of Birth </label>
+          <input type="date" name="Birthday" id="Birthday">
+  
+          <label for="gender"> Gender </label>
+          <input type="radio" id="male">
+          <label for="male"> Male </label>
+          <input type="radio" id="female">
+          <label for="female"> Female </label>
+  
+          <label for="country"> Country </label>
+          <Select id="country">
+            <option value="usa"> United States </option>
+            <option value="bd"> Bangladesh </option>
+            <option value="uk"> United Kingdom </option>
+          </Select>
+  
+        </fieldset>
+  
+        <fieldset>
+          <legend> Other Informations </legend>
+          <label for="comment"> Comments: </label>
+          <textarea name="Comment" id="comment" cols="30" rows="10"></textarea>
+          <label for="select"> I agree to the terms of service </label>
+          <input type="checkbox" id="select">
+        </fieldset>
+        <button type="submit"> Submit </button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* External CSS */
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    color: aqua;
+    font-style: italic;
+    font-size: 80px;
+    font-family: cursive;
+    font-weight: bold;
+    /* border-style: solid; */
+    border-style: dashed;
+    border-radius: 50px;
+    border-top: solid blueviolet 10px;
+    padding: 30px;
+    margin: 70px;
+    /* height: 400px;
+    width: 300px; */
+}
+img {
+    border: 20px darkblue 5px;
+}
+p {
+    line-height: 10px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Kanit', sans-serif;
+    color: rgb(81, 53, 104);
+}
+table {
+    color: rgba(0, 0, 0, 0.24);
+    background-color: #fff;
+} 
