@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Update-Recipe </title>
+</head>
+<body>
+    <h1 style="text-align: center;"> Update Your Reciepe </h1>
+    <hr>
+
+  <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Recipe Name </label>
+        <input name="receipe_name" value="{{receipe.receipe_name}}" type="text" class="form-control" required>
+      </head>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" required> Recipe Description </label>
+        <textarea required class="form-control" value="{{receipe.receipe_name}} name="receipe_description"> </textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" required> Recipe Image </label>
+        <input name="receipe_image" type="file" class="form-control" required> {{receipe.receipe_image}}
+      <!-- </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1"> Check me out </label>
+      </div> -->
+      <button style="color: green" type="submit" class="btn btn-primary"> Update Recipe </button>
+    </form>
+
+</body>
+</html>

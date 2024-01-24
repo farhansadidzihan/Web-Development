@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Our Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+  </head>
+  <body>
+    <h1> Login </h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to Our Hotel! We pride ourselves on providing comfortable and affordable accommodations for all of our guests. Our hotel features spacious rooms, modern amenities, and a convenient location near all the best local attractions. Whether you're visiting for business or pleasure, we're here to make your stay as enjoyable as possible.</p>
+    </section>
+    <section id="rooms">
+      <h2>Rooms</h2>
+      <p>Our hotel offers a variety of rooms to meet your needs, including standard rooms, suites, and family rooms. All of our rooms are equipped with comfortable beds, flat-screen TVs, and free Wi-Fi. We also offer room service and daily housekeeping to ensure that your stay is as comfortable as possible.</p>
+    </section>
+
+    <div class="mt-5">
+      <div class="mx-auto-col-6">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="text-align: center;"> Search Your Favourite Recipe </label>
+          <input name="search" type="text" class="form-control" required>
+        </div>
+        <button style="color: green" type="submit" class="btn btn-primary"> Search </button>
+      </div>
+    </div>
+    </head>
+    <section id="recipes">
+      <h2> Your Recipes </h2>
+      <table>
+        <thead>
+          <tr>
+            <th> Receipe name </th>
+            <th> Receipe Description </th>
+            <th> Image </th>
+            <th> Actions </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for receipe in receipes %}
+          <tr>
+            <td> {{ receipe.receipe_name }} </td>
+            <td> {{ receipe.receipe_description}} </td>
+            <td>
+              <img src="/media/{{ receipe.receipe_image }}" style="height: 200px;" alt="Sorry, Image not found!">
+              <td>
+                <a href="/delete-receipe/{{receipe.id}}" class="btn btn-danger"> Remove </a>
+                <a href="/update-receipe/{{receipe.id}}" class="btn btn-success"> Update </a>
+              </td>
+            </td>
+          </tr>
+          {% endfor %}
+
+        </tbody>
+      </table>
+    </section>
+    <h1 style="text-align: center;"> Add Your Reciepe </h1>
+    <hr>
+
+    <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"> Recipe Name </label>
+          <input name="receipe_name" type="text" class="form-control" required>
+        </head>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label" required> Recipe Description </label>
+          <textarea required class="form-control"  name="receipe_description"> </textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label" required> Recipe Image </label>
+          <input name="receipe_image" type="file" class="form-control" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"> Check me out </label>
+        </div>
+        <button style="color: green" type="submit" class="btn btn-primary"> Add to Cart </button>
+      </form>
+</body>
+</html>
