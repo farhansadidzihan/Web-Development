@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Puts .btn after components */
+@layer components{
+    .btn {
+       @apply px-4 rounded-lg py-2 text-sm bg-red-500 sm:hover:font-extrabold lg:hover:font-mono
+       active:bg-purple-400 hover:bg-yellow-500 focus:bg-black focus-within:bg-yellow-700
+   }
+}
